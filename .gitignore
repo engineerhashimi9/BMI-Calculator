@@ -1,260 +1,307 @@
-# Miscellaneous
-*.class
-*.lock
-*.log
-*.pyc
-*.swp
-.buildlog/
-.history
+# ============================================================
 
+# Flutter / Dart
 
+# ============================================================
 
-# Flutter repo-specific
-/bin/cache/
-/bin/internal/bootstrap.bat
-/bin/internal/bootstrap.sh
-/bin/mingit/
-/dev/benchmarks/mega_gallery/
-/dev/bots/.recipe_deps
-/dev/bots/android_tools/
-/dev/devicelab/ABresults*.json
-/dev/docs/doc/
-/dev/docs/flutter.docs.zip
-/dev/docs/lib/
-/dev/docs/pubspec.yaml
-/dev/integration_tests/**/xcuserdata
-/dev/integration_tests/**/Pods
-/packages/flutter/coverage/
-version
-analysis_benchmark.json
-
-# packages file containing multi-root paths
-.packages.generated
-
-# Flutter/Dart/Pub related
-**/doc/api/
 .dart_tool/
+.pub/
+.pub-cache/
+.pub-preload-cache/
+
+# Flutter plugins / generated files
+
 .flutter-plugins
 .flutter-plugins-dependencies
-**/generated_plugin_registrant.dart
 .packages
-.pub-preload-cache/
-.pub/
-build/
-flutter_*.png
-linked_*.ds
-unlinked.ds
-unlinked_spec.ds
 
-# Android related
-**/android/**/gradle-wrapper.jar
+# Generated plugin registrants
+
+**/generated_plugin_registrant.dart
+
+# Flutter build output
+
+build/
+coverage/
+
+# Generated documentation
+
+**/doc/api/
+
+# Flutter ephemeral files
+
+**/Flutter/ephemeral/
+
+# Flutter generated environment files
+
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+
+# Flutter engine/framework artifacts
+
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/.last_build_id
+
+# Generated Flutter assets
+
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+
+# ============================================================
+
+# Android
+
+# ============================================================
+
+# Gradle cache
+
 .gradle/
-**/android/captures/
-**/android/gradlew
-**/android/gradlew.bat
+**/android/.gradle/
+
+# Local Android configuration
+
 **/android/local.properties
+
+# Android captures
+
+**/android/captures/
+
+# Generated Android files
+
 **/android/**/GeneratedPluginRegistrant.java
+**/android/generated_gradle_redirect.gradle
+
+# Android build outputs
+
+*.apk
+*.aab
+*.ap_
+
+# Signing / keystores
+
 **/android/key.properties
 *.jks
+*.keystore
 
-# iOS/XCode related
+# ============================================================
+
+# iOS / Xcode
+
+# ============================================================
+
+**/ios/.generated/
+**/ios/Pods/
+**/ios/.symlinks/
+
 **/ios/**/*.mode1v3
 **/ios/**/*.mode2v3
 **/ios/**/*.moved-aside
 **/ios/**/*.pbxuser
 **/ios/**/*.perspectivev3
-**/ios/**/*sync/
-**/ios/**/.sconsign.dblite
-**/ios/**/.tags*
-**/ios/**/.vagrant/
+**/ios/**/*.xcuserstate
+**/ios/**/*.xccheckout
+**/ios/**/*.xcbkptlist
+**/ios/**/*.xcworkspace
+
+**/ios/**/xcuserdata/
 **/ios/**/DerivedData/
-**/ios/**/Icon?
-**/ios/**/Pods/
-**/ios/**/.symlinks/
-**/ios/**/profile
-**/ios/**/xcuserdata
-**/ios/.generated/
-**/ios/Flutter/.last_build_id
-**/ios/Flutter/App.framework
-**/ios/Flutter/Flutter.framework
-**/ios/Flutter/Flutter.podspec
-**/ios/Flutter/Generated.xcconfig
-**/ios/Flutter/ephemeral
-**/ios/Flutter/app.flx
-**/ios/Flutter/app.zip
-**/ios/Flutter/flutter_assets/
-**/ios/Flutter/flutter_export_environment.sh
-**/ios/ServiceDefinitions.json
-**/ios/Runner/GeneratedPluginRegistrant.*
 
-# macOS
-**/Flutter/ephemeral/
-**/Pods/
-**/macos/Flutter/GeneratedPluginRegistrant.swift
-**/macos/Flutter/ephemeral
-**/xcuserdata/
+# Xcode generated files
 
-# Windows
-**/windows/flutter/generated_plugin_registrant.cc
-**/windows/flutter/generated_plugin_registrant.h
-**/windows/flutter/generated_plugins.cmake
+DerivedData/
 
-# Linux
-**/linux/flutter/generated_plugin_registrant.cc
-**/linux/flutter/generated_plugin_registrant.h
-**/linux/flutter/generated_plugins.cmake
+# Exceptions for default Xcode files
 
-# Coverage
-coverage/
-
-# Symbols
-app.*.symbols
-
-# Exceptions to above rules.
 !**/ios/**/default.mode1v3
 !**/ios/**/default.mode2v3
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
-!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
-!/dev/ci/**/Gemfile.lock
+!**/ios/**/default.xcworkspace
 
+# ============================================================
 
+# macOS
 
+# ============================================================
 
-# -------------------------------------------------------------------------
-# Flutter / Dart Build Artifacts
-# -------------------------------------------------------------------------
-# Hidden Flutter folders
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
+**/macos/Pods/
+**/macos/.symlinks/
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/GeneratedPluginRegistrant.swift
 
-# The core build output directory
-build/
+**/macos/**/xcuserdata/
 
-# -------------------------------------------------------------------------
-# Android Specifics
-# -------------------------------------------------------------------------
-android/.gradle/
-android/local.properties
-android/captures/
-android/gradlew
-android/gradlew.bat
-android/generated_gradle_redirect.gradle
-*.apk
-*.ap_
-*.aab
+# ============================================================
 
-# -------------------------------------------------------------------------
-# iOS/macOS Specifics
-# -------------------------------------------------------------------------
-ios/.generated/
-ios/Flutter/App.framework
-ios/Flutter/Flutter.framework
-ios/Flutter/Flutter.podspec
-ios/Flutter/Generated.xcconfig
-ios/Flutter/flutter_export_environment.sh
-ios/Pods/
-ios/.symlinks/
-macOS/Pods/
-macOS/.symlinks/
-DerivedData/
-.ppp/
-*.pbxuser
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-!default.pbxuser
-!default.mode1v3
-!default.mode2v3
-!default.perspectivev3
-xcuserdata/
-*.xccheckout
-*.moved-aside
-*.xcworkspace
-!default.xcworkspace
-*.xcbkptlist
-*.xcuserstate
+# Windows
 
-# -------------------------------------------------------------------------
-# Windows/Linux Specifics
-# -------------------------------------------------------------------------
-windows/flutter/ephemeral/
-linux/flutter/ephemeral/
+# ============================================================
 
-# -------------------------------------------------------------------------
-# JavaScript / Web Specifics
-# -------------------------------------------------------------------------
-.node_modules/
-node_modules/
+**/windows/flutter/ephemeral/
+**/windows/flutter/generated_plugin_registrant.cc
+**/windows/flutter/generated_plugin_registrant.h
+**/windows/flutter/generated_plugins.cmake
+
+# ============================================================
+
+# Linux
+
+# ============================================================
+
+**/linux/flutter/ephemeral/
+**/linux/flutter/generated_plugin_registrant.cc
+**/linux/flutter/generated_plugin_registrant.h
+**/linux/flutter/generated_plugins.cmake
+
+# ============================================================
+
+# Web
+
+# ============================================================
+
 /web/stacktrace.js
 
-# -------------------------------------------------------------------------
-# IDEs and Text Editors
-# -------------------------------------------------------------------------
+# ============================================================
+
+# JavaScript / Node
+
+# ============================================================
+
+node_modules/
+
+# ============================================================
+
+# IDEs / Editors
+
+# ============================================================
+
 # Android Studio / IntelliJ
+
 .idea/
 *.iml
 *.ipr
 *.iws
 
-# Visual Studio Code
+# VS Code
+
 .vscode/
 
-# System files
-.DS_Store
-Thumbs.db
+# Uncomment these if you want to commit shared VS Code settings:
 
-# -------------------------------------------------------------------------
-# Sensitive Data (Crucial for API keys and secrets)
-# -------------------------------------------------------------------------
-*.env
-*.env.*
-# -------------------------------------------------------------------------
-# Flutter & Dart Build Artifacts
-# -------------------------------------------------------------------------
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-build/
+# !.vscode/
 
-# -------------------------------------------------------------------------
-# VS Code Specifics (Optimized for Flutter Teams)
-# -------------------------------------------------------------------------
-.vscode/
-# Alternative approach: If you want to share launch configurations with team 
-# members, uncomment the line below and comment out '.vscode/' above instead:
-# .vscode/*
 # !.vscode/launch.json
+
 # !.vscode/tasks.json
+
 # !.vscode/settings.json
+
 # !.vscode/extensions.json
 
-# Local history extensions cache
+# Local history
+
 .history/
+
+# VS Code workspace files
+
 *.code-workspace
 
-# -------------------------------------------------------------------------
-# Native Mobile & Web Artifacts
-# -------------------------------------------------------------------------
-android/.gradle/
-android/local.properties
-android/captures/
-*.apk
-*.aab
+# ============================================================
 
-ios/Pods/
-ios/.symlinks/
-macOS/Pods/
-macOS/.symlinks/
+# Miscellaneous
+
+# ============================================================
+
+*.class
+*.log
+*.pyc
+*.swp
+
+.buildlog/
+
+# macOS
+
 .DS_Store
 
-# -------------------------------------------------------------------------
-# Secrets & Environments
-# -------------------------------------------------------------------------
-*.env
-*.env.*
+# Windows
+
+Thumbs.db
+
+# ============================================================
+
+# Environment / Secrets
+
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# ============================================================
+
+# Generated / Temporary Data
+
+# ============================================================
+
+*.symbols
+
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+
+# ============================================================
+
+# Project-specific Flutter repository files
+
+# ============================================================
+
+# These are useful when working with the Flutter SDK repository,
+
+# but normally should not exist in a regular Flutter application.
+
+# /bin/cache/
+
+# /bin/internal/bootstrap.bat
+
+# /bin/internal/bootstrap.sh
+
+# /bin/mingit/
+
+# /dev/benchmarks/mega_gallery/
+
+# /dev/bots/.recipe_deps
+
+# /dev/bots/android_tools/
+
+# /dev/devicelab/ABresults*.json
+
+# /dev/docs/doc/
+
+# /dev/docs/flutter.docs.zip
+
+# /dev/docs/lib/
+
+# /dev/docs/pubspec.yaml
+
+# /dev/integration_tests/**/xcuserdata
+
+# /dev/integration_tests/**/Pods
+
+# /packages/flutter/coverage/
+
+# /version
+
+# /analysis_benchmark.json
+
+# Flutter repo multi-root paths
+
+.packages.generated
+
+# Keep Flutter repository test files that are explicitly required
+
+!packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+!dev/ci/**/Gemfile.lock
