@@ -117,3 +117,98 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+
+
+
+# -------------------------------------------------------------------------
+# Flutter / Dart Build Artifacts
+# -------------------------------------------------------------------------
+# Hidden Flutter folders
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+# The core build output directory
+build/
+
+# -------------------------------------------------------------------------
+# Android Specifics
+# -------------------------------------------------------------------------
+android/.gradle/
+android/local.properties
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/generated_gradle_redirect.gradle
+*.apk
+*.ap_
+*.aab
+
+# -------------------------------------------------------------------------
+# iOS/macOS Specifics
+# -------------------------------------------------------------------------
+ios/.generated/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+ios/.symlinks/
+macOS/Pods/
+macOS/.symlinks/
+DerivedData/
+.ppp/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcworkspace
+!default.xcworkspace
+*.xcbkptlist
+*.xcuserstate
+
+# -------------------------------------------------------------------------
+# Windows/Linux Specifics
+# -------------------------------------------------------------------------
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+
+# -------------------------------------------------------------------------
+# JavaScript / Web Specifics
+# -------------------------------------------------------------------------
+.node_modules/
+node_modules/
+/web/stacktrace.js
+
+# -------------------------------------------------------------------------
+# IDEs and Text Editors
+# -------------------------------------------------------------------------
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# -------------------------------------------------------------------------
+# Sensitive Data (Crucial for API keys and secrets)
+# -------------------------------------------------------------------------
+*.env
+*.env.*
