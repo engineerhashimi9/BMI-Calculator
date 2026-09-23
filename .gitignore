@@ -212,3 +212,49 @@ Thumbs.db
 # -------------------------------------------------------------------------
 *.env
 *.env.*
+# -------------------------------------------------------------------------
+# Flutter & Dart Build Artifacts
+# -------------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+
+# -------------------------------------------------------------------------
+# VS Code Specifics (Optimized for Flutter Teams)
+# -------------------------------------------------------------------------
+.vscode/
+# Alternative approach: If you want to share launch configurations with team 
+# members, uncomment the line below and comment out '.vscode/' above instead:
+# .vscode/*
+# !.vscode/launch.json
+# !.vscode/tasks.json
+# !.vscode/settings.json
+# !.vscode/extensions.json
+
+# Local history extensions cache
+.history/
+*.code-workspace
+
+# -------------------------------------------------------------------------
+# Native Mobile & Web Artifacts
+# -------------------------------------------------------------------------
+android/.gradle/
+android/local.properties
+android/captures/
+*.apk
+*.aab
+
+ios/Pods/
+ios/.symlinks/
+macOS/Pods/
+macOS/.symlinks/
+.DS_Store
+
+# -------------------------------------------------------------------------
+# Secrets & Environments
+# -------------------------------------------------------------------------
+*.env
+*.env.*
